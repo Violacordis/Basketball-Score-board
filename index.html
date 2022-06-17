@@ -1,0 +1,38 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="https://www.fontspace.com/search?q=Cursed%20Timer%20ULiL">
+    </head>
+    <body>
+        <div class="container">
+            <h2>BASKETBALL SCORE BOARD</h2>
+            <div class="score-card">
+                <div class="Home-card">
+                    <h3>HOME</h3>
+                    <h1 id="homeScore">0</h1>
+                    
+                    <div class="home-btns">
+                        <button onclick="addPlus1ToHome()">+1</button>
+                        <button onclick="addPlus2ToHome()">+2</button>
+                        <button onclick="addPlus3ToHome()">+3</button>
+                    </div>
+                 </div>
+            
+                <div class="Guest-card">
+                    <h3>GUEST</h3>
+                    <h1 id="guestScore">0</h1>
+                    <div class="guest-btns">
+                        <button onclick="addPlus1ToGuest()">+1</button>
+                        <button onclick="addPlus2ToGuest()">+2</button>
+                        <button onclick="addPlus3ToGuest()">+3</button>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="input-div"> -->
+                <input type="button" id="reset-game" value="Reset Game"  onclick="resetGame()" >
+            <!-- </div> -->
+            
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>

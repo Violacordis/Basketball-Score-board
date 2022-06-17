@@ -1,0 +1,177 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgba(27, 36, 74, 0.1);
+}
+
+:root {
+    --container-bg-color: rgba(27, 36, 74, 1);
+    --container-font-family: verdana;
+    --container-font-weight: 700;
+    --container-width: 100%;
+    --container-height: auto;
+    --container-font-size: 40px;
+    --container-line-height: 35.89px;
+    --board-font-family: Cursed Timer ULiL;
+    --board-bg-color: rgba(8, 0, 1, 1);
+    --board-color: rgba(249, 79, 109, 1);
+    --button-color: rgba(154, 171, 216, 1);
+    --container-text-color: rgba(238, 238, 238, 1);
+    --board-width: 155px;
+    --board-height: 120px;
+    --button-div-width: 155px;
+    --button-each-width: 45px;
+    --button-height: 45px;
+    --board-font-size: 90px;
+    --board-font-weight: 400;
+    --board-line-height: 126.67px;
+    --losing-bg-color: #e30303;
+    --losing-color: #fff;
+    --winning-bg-color: #03b071;
+    --winning-color: #fff;
+    --draw-bg-color: #b4a504;
+    --draw-color: #fff;
+    --input-hover-bg: rgba(249, 100, 109, 1);
+    
+
+}
+
+
+.container {
+    background-color: var(--container-bg-color);
+    width: var(--container-width);
+    height: var(--container-height);
+    color: var( --container-text-color);
+    margin: 0 auto;
+    border-radius: 10px;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center */
+    padding-bottom: 40px;
+    /* align-items: center; */  
+}
+
+.score-card {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* text-align: center; */
+}
+
+.home-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+}
+.guest-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+}
+
+h3 {
+    font-size: var(--container-font-size);
+    font-weight: var(--container-font-weight);
+    line-height: var(--container-line-height);
+    font-family: var(--container-font-family);
+}
+h2 {
+    font-size: var(--container-font-size);
+    font-weight: var(--container-font-weight);
+    line-height: var(--container-line-height);
+    font-family: var(--container-font-family);
+    background-color: var(--board-bg-color);
+    color: rgba(220, 240, 180, 0.9);
+    text-align: center;
+    padding: 24px;
+}
+
+h1 {
+    width: var( --board-width);
+    height: var(--board-height);
+    font-size: var(--board-font-size);
+    font-family: var(--board-font-family);
+    font-weight: var(--board-font-weight);
+    line-height: var(--board-line-height);
+    text-align: center;
+    border-radius: 10px;
+    background-color: var(--board-bg-color);
+    color: var( --board-color);
+
+}
+
+.home-btns {
+    width: var(--button-div-width);
+    height: var(--button-each-width);
+    margin-top: 16px;
+    display: flex;
+    flex-direction: space-around;   
+    margin: 16px auto;
+} 
+
+
+
+.guest-btns {
+    width: var(--button-div-width);
+    height: var(--button-each-width);
+    margin-top: 16px;
+    display: flex;
+    justify-content: space-around;
+    margin: 16px auto;
+    
+} 
+
+button {
+    width: var(--button-each-width);
+    height: var(--button-height);
+    color: var(--button-color);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27.81px;
+    text-align: center;
+    background-color: var(--container-bg-color);
+    border-color: var(--button-color);
+    border-radius: 10px;
+    margin: 0 auto;
+    font-family: var(--board-font-family);
+    cursor: pointer;
+}
+
+input {
+    padding: 16px;
+    background-color: #ac1103;
+    color: #ddd;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 10px;  
+    display: block;
+    letter-spacing: 1.5px;
+    margin: 16px auto; 
+    cursor: pointer;
+    font-family: var(--board-font-family);
+    border: none;
+    border-color: none;
+}
+
+input:hover {
+    background-color: var(--input-hover-bg);
+}
+input:active {
+    background-color: rgba(230, 90, 100, 1);
+}
+/* For different score highlights  */
+
+.winning {
+    background-color: var(--winning-bg-color);
+    color: var( --winning-color);
+}
+.losing {
+    background-color: var(--losing-bg-color);
+    color: var( --losing-color);
+}
+.draw {
+    background-color: var(--draw-bg-color);
+    color: var( --draw-color);
+}
